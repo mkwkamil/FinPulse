@@ -1,0 +1,45 @@
+# Zależności i cache narzędzi
+node_modules/
+.vite/
+.npm/
+*.tsbuildinfo
+
+# Artefakty builda i raporty pokrycia testami
+dist/
+dist-ssr/
+coverage/
+
+# Pliki środowiskowe i sekrety lokalne
+.env
+.env.local
+.env.*.local
+
+# Konfiguracje lokalne narzędzi deploymentu
+.vercel/
+.wrangler/
+
+# Logi
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Pliki systemowe (macOS / Windows) oraz pliki tymczasowe Excela / LibreOffice
+.DS_Store
+**/.DS_Store
+._*
+Thumbs.db
+~$*.xlsx
+~$*.xlsm
+.~lock.*#
+
+# Edytory i IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

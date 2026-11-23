@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import "@fontsource/sora/600.css";
+@import "@fontsource/sora/700.css";
+@import "@fontsource/dm-sans/400.css";
+@import "@fontsource/dm-sans/500.css";
+@import "@fontsource/dm-sans/600.css";
+@import "@fontsource/dm-sans/700.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+@import "@fontsource/jetbrains-mono/600.css";
+
+:root {
+  color-scheme: dark;
+  --bg: #060913;
+  --bg-elevated: #0b1226;
+  --card: rgba(255, 255, 255, 0.045);
+  --card-hover: rgba(255, 255, 255, 0.075);
+  --stroke: rgba(255, 255, 255, 0.1);
+  --ink: #eef1ff;
+  --ink-secondary: #b4bbd8;
+  --ink-muted: #8a93b5;
+  --accent-blue: #3987e5;
+  --accent-glow: #4aa3ff;
+  --accent-violet: #9085e9;
+  --accent-up: #f0645f;
+  --accent-down: #2fd1a0;
+  --accent-sim: #ffd36b;
+  --font-display: "Sora", "DM Sans", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  background-image:
+    radial-gradient(900px 520px at 8% -8%, rgba(57, 135, 229, 0.22), transparent 60%),
+    radial-gradient(800px 520px at 100% 0%, rgba(144, 133, 233, 0.18), transparent 60%),
+    radial-gradient(700px 500px at 50% 110%, rgba(25, 158, 112, 0.12), transparent 60%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.glass-card {
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
